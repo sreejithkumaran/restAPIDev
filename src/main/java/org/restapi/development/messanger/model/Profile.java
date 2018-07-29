@@ -10,18 +10,20 @@ public class Profile {
 	private String Age;
 	private String Gender;
 	private String Nationality;
+	private String SSN;
 
 	public Profile() {
 
 	}
 
-	public Profile(String firstName, String lastName, String age, String gender, String nationality) {
+	public Profile(String firstName, String lastName, String age, String gender, String nationality,String ssn) {
 		super();
 		FirstName = firstName;
 		LastName = lastName;
 		Age = age;
 		Gender = gender;
 		Nationality = nationality;
+		SSN = ssn;
 	}
 	public String getFirstName() {
 		return FirstName;
@@ -50,6 +52,10 @@ public class Profile {
 	public String getGender() {
 		return Gender;
 	}
+	
+	public String getSSN() {
+		return SSN;
+	}
 
 	public void setGender(String gender) {
 		Gender = gender;
@@ -61,6 +67,10 @@ public class Profile {
 
 	public void setNationality(String nationality) {
 		Nationality = nationality;
+	}
+	
+	public void setSSN(String ssn) {
+		SSN = ssn;
 	}
 
 }
