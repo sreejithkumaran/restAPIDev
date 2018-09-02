@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.restapi.development.messanger.model.Message;
 import org.restapi.development.messanger.model.Profile;
 
 public class ProfileService {
@@ -21,5 +22,9 @@ public class ProfileService {
 	
 	public List<Profile> getAllProfile(){
 		return new ArrayList<Profile>(profiles.values());
+	}
+	
+	public Profile addProfile(Profile profile) { 	
+		return profile;
 	}
 }
