@@ -8,8 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.restapi.development.messanger.config.Configuration;
 import org.restapi.development.messanger.model.Course;
 import org.restapi.development.messanger.model.Message;
 import org.restapi.development.messanger.model.Profile;
