@@ -18,10 +18,6 @@ import org.restapi.development.messanger.model.Course;
 @Path("/courses")
 public class courseResource {
 
-
-	//http://localhost:8081/messanger/webapi/courses
-	//http://localhost:8081/messanger/webapi/courses/2
-
 	@GET
 	@Produces(MediaType.APPLICATION_XML) 
 	public ArrayList<Course> getCourses() throws Exception { 
