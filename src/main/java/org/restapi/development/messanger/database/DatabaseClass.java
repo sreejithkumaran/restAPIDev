@@ -48,6 +48,7 @@ public class DatabaseClass {
 		
 	}
 	
+	
 	public static ArrayList<Course> getCourse(String id) throws Exception{
 		String user = "root";
 		String password = "adminroot";

@@ -19,30 +19,36 @@ import org.restapi.development.messanger.model.Course;
 public class courseResource {
 
 	@GET
-	@Produces(MediaType.APPLICATION_XML) 
+//	@Produces(MediaType.APPLICATION_XML) 
+	@Produces(MediaType.APPLICATION_JSON) 
 	public ArrayList<Course> getCourses() throws Exception { 
 		return DatabaseClass.getCourses();
 	}
 
 	@GET
 	@Path("/{courseId}")
-	@Produces(MediaType.APPLICATION_XML)  
+//	@Produces(MediaType.APPLICATION_XML)  
+	@Produces(MediaType.APPLICATION_JSON) 
 	public ArrayList<Course> getCourse(@PathParam("courseId") String id) throws Exception{ 
 		return DatabaseClass.getCourse(id);
 
 	}
 
 	@POST
-	@Produces(MediaType.APPLICATION_XML)
-	@Consumes(MediaType.APPLICATION_XML)
+//	@Produces(MediaType.APPLICATION_XML)
+//	@Consumes(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON) 
+	@Consumes(MediaType.APPLICATION_JSON) 
 	public String addCourse(Course c) throws Exception { 
 		return 	DatabaseClass.addCourse(c);
 	}
 
 	@PUT
 	@Path("/{courseId}")
-	@Consumes(MediaType.APPLICATION_XML)
-	@Produces(MediaType.APPLICATION_XML)
+//	@Consumes(MediaType.APPLICATION_XML)
+//	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON) 
+	@Consumes(MediaType.APPLICATION_JSON) 
 	public String updateCourse(@PathParam("courseId") String id,Course c) throws Exception {
 		return DatabaseClass.modifyCourse(id, c);
 	}
